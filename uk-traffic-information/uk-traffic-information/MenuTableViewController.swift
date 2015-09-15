@@ -9,9 +9,16 @@
 import UIKit
 
 class MenuTableViewController: UITableViewController {
+    
+    // An array of menu items
+    var menuItems = [String]()
+    
     var selectedMenuItem : Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        menuItems = ["Home"]
         
         // Customize apperance of table view
         tableView.contentInset = UIEdgeInsetsMake(64.0, 0, 0, 0) //
@@ -25,11 +32,6 @@ class MenuTableViewController: UITableViewController {
         tableView.selectRowAtIndexPath(NSIndexPath(forRow: selectedMenuItem, inSection: 0), animated: false, scrollPosition: .Middle)
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
     // MARK: - Table view data source
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -39,7 +41,7 @@ class MenuTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // Return the number of rows in the section.
-        return 4
+        return menuItems.count
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -55,7 +57,7 @@ class MenuTableViewController: UITableViewController {
             cell!.selectedBackgroundView = selectedBackgroundView
         }
         
-        cell!.textLabel?.text = "ViewController #\(indexPath.row+1)"
+        cell!.textLabel?.text = menuItems[indexPath.row]
         
         return cell!
     }
