@@ -17,21 +17,19 @@ class MainViewController: UIViewController, ENSideMenuDelegate {
     }
     
     func toggleSideMenu() {
-        print("Here")
         toggleSideMenuView()
     }
     
     // MARK: - ENSideMenu Delegate
     func sideMenuWillOpen() {
-        print("sideMenuWillOpen")
+        
     }
     
     func sideMenuWillClose() {
-        print("sideMenuWillClose")
+        
     }
     
     func sideMenuShouldOpenSideMenu() -> Bool {
-        print("sideMenuShouldOpenSideMenu")
         return true
     }
 
