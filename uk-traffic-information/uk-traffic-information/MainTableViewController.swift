@@ -32,14 +32,6 @@ class MainTableViewController: UITableViewController, ENSideMenuDelegate {
     }
     
     // MARK: - ENSideMenu Delegate
-    func sideMenuWillOpen() {
-        
-    }
-    
-    func sideMenuWillClose() {
-        
-    }
-    
     func sideMenuShouldOpenSideMenu() -> Bool {
         return true
     }
