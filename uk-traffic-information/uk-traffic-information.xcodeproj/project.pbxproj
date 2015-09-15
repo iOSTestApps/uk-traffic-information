@@ -20,9 +20,9 @@
 		AC0744221BA892250039CC9A /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0744211BA892250039CC9A /* MenuTableViewController.swift */; };
 		ACD857BA1BA8987A00861BE1 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD857B91BA8987A00861BE1 /* MenuItem.swift */; };
 		ACD857BC1BA8A4B600861BE1 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD857BB1BA8A4B600861BE1 /* MainTableViewController.swift */; };
-		ACD857C11BA8A67700861BE1 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD857BF1BA8A67700861BE1 /* Fabric.framework */; };
-		ACD857C21BA8A67700861BE1 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD857C01BA8A67700861BE1 /* Crashlytics.framework */; };
 		ACD857C41BA8A94800861BE1 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD857C31BA8A94800861BE1 /* Event.swift */; };
+		ACD857D31BA8ACCD00861BE1 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD857D11BA8ACCD00861BE1 /* Fabric.framework */; };
+		ACD857D41BA8ACCD00861BE1 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD857D21BA8ACCD00861BE1 /* Crashlytics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,9 +62,9 @@
 		AC0744211BA892250039CC9A /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		ACD857B91BA8987A00861BE1 /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		ACD857BB1BA8A4B600861BE1 /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
-		ACD857BF1BA8A67700861BE1 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = SOURCE_ROOT; };
-		ACD857C01BA8A67700861BE1 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = SOURCE_ROOT; };
 		ACD857C31BA8A94800861BE1 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		ACD857D11BA8ACCD00861BE1 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		ACD857D21BA8ACCD00861BE1 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,8 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACD857C21BA8A67700861BE1 /* Crashlytics.framework in Frameworks */,
-				ACD857C11BA8A67700861BE1 /* Fabric.framework in Frameworks */,
+				ACD857D41BA8ACCD00861BE1 /* Crashlytics.framework in Frameworks */,
+				ACD857D31BA8ACCD00861BE1 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,8 +196,8 @@
 		ACD857BE1BA8A66D00861BE1 /* frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				ACD857BF1BA8A67700861BE1 /* Fabric.framework */,
-				ACD857C01BA8A67700861BE1 /* Crashlytics.framework */,
+				ACD857D11BA8ACCD00861BE1 /* Fabric.framework */,
+				ACD857D21BA8ACCD00861BE1 /* Crashlytics.framework */,
 			);
 			name = frameworks;
 			sourceTree = "<group>";
@@ -212,7 +212,7 @@
 				AC0743E01BA8869F0039CC9A /* Sources */,
 				AC0743E11BA8869F0039CC9A /* Frameworks */,
 				AC0743E21BA8869F0039CC9A /* Resources */,
-				ACD857BD1BA8A65500861BE1 /* ShellScript */,
+				ACD857D01BA8ACB200861BE1 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -329,7 +329,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		ACD857BD1BA8A65500861BE1 /* ShellScript */ = {
+		ACD857D01BA8ACB200861BE1 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -502,6 +502,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/uk-traffic-information",
 				);
 				INFOPLIST_FILE = "uk-traffic-information/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -518,6 +519,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/uk-traffic-information",
 				);
 				INFOPLIST_FILE = "uk-traffic-information/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
