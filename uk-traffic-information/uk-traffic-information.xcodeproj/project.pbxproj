@@ -1,0 +1,523 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC0743E81BA8869F0039CC9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0743E71BA8869F0039CC9A /* AppDelegate.swift */; };
+		AC0743EA1BA8869F0039CC9A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0743E91BA8869F0039CC9A /* ViewController.swift */; };
+		AC0743ED1BA8869F0039CC9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC0743EB1BA8869F0039CC9A /* Main.storyboard */; };
+		AC0743F01BA8869F0039CC9A /* uk_traffic_information.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC0743EE1BA8869F0039CC9A /* uk_traffic_information.xcdatamodeld */; };
+		AC0743F21BA8869F0039CC9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC0743F11BA8869F0039CC9A /* Assets.xcassets */; };
+		AC0743F51BA8869F0039CC9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC0743F31BA8869F0039CC9A /* LaunchScreen.storyboard */; };
+		AC0744001BA8869F0039CC9A /* uk_traffic_informationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0743FF1BA8869F0039CC9A /* uk_traffic_informationTests.swift */; };
+		AC07440B1BA8869F0039CC9A /* uk_traffic_informationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC07440A1BA8869F0039CC9A /* uk_traffic_informationUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AC0743FC1BA8869F0039CC9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC0743DC1BA8869F0039CC9A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC0743E31BA8869F0039CC9A;
+			remoteInfo = "uk-traffic-information";
+		};
+		AC0744071BA8869F0039CC9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC0743DC1BA8869F0039CC9A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC0743E31BA8869F0039CC9A;
+			remoteInfo = "uk-traffic-information";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AC0743E41BA8869F0039CC9A /* uk-traffic-information.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "uk-traffic-information.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC0743E71BA8869F0039CC9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AC0743E91BA8869F0039CC9A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AC0743EC1BA8869F0039CC9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AC0743EF1BA8869F0039CC9A /* uk_traffic_information.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = uk_traffic_information.xcdatamodel; sourceTree = "<group>"; };
+		AC0743F11BA8869F0039CC9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC0743F41BA8869F0039CC9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AC0743F61BA8869F0039CC9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC0743FB1BA8869F0039CC9A /* uk-traffic-informationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "uk-traffic-informationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC0743FF1BA8869F0039CC9A /* uk_traffic_informationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uk_traffic_informationTests.swift; sourceTree = "<group>"; };
+		AC0744011BA8869F0039CC9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC0744061BA8869F0039CC9A /* uk-traffic-informationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "uk-traffic-informationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC07440A1BA8869F0039CC9A /* uk_traffic_informationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uk_traffic_informationUITests.swift; sourceTree = "<group>"; };
+		AC07440C1BA8869F0039CC9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC0743E11BA8869F0039CC9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC0743F81BA8869F0039CC9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC0744031BA8869F0039CC9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC0743DB1BA8869F0039CC9A = {
+			isa = PBXGroup;
+			children = (
+				AC0743E61BA8869F0039CC9A /* uk-traffic-information */,
+				AC0743FE1BA8869F0039CC9A /* uk-traffic-informationTests */,
+				AC0744091BA8869F0039CC9A /* uk-traffic-informationUITests */,
+				AC0743E51BA8869F0039CC9A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AC0743E51BA8869F0039CC9A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC0743E41BA8869F0039CC9A /* uk-traffic-information.app */,
+				AC0743FB1BA8869F0039CC9A /* uk-traffic-informationTests.xctest */,
+				AC0744061BA8869F0039CC9A /* uk-traffic-informationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC0743E61BA8869F0039CC9A /* uk-traffic-information */ = {
+			isa = PBXGroup;
+			children = (
+				AC0743E71BA8869F0039CC9A /* AppDelegate.swift */,
+				AC0743E91BA8869F0039CC9A /* ViewController.swift */,
+				AC0743EB1BA8869F0039CC9A /* Main.storyboard */,
+				AC0743F11BA8869F0039CC9A /* Assets.xcassets */,
+				AC0743F31BA8869F0039CC9A /* LaunchScreen.storyboard */,
+				AC0743F61BA8869F0039CC9A /* Info.plist */,
+				AC0743EE1BA8869F0039CC9A /* uk_traffic_information.xcdatamodeld */,
+			);
+			path = "uk-traffic-information";
+			sourceTree = "<group>";
+		};
+		AC0743FE1BA8869F0039CC9A /* uk-traffic-informationTests */ = {
+			isa = PBXGroup;
+			children = (
+				AC0743FF1BA8869F0039CC9A /* uk_traffic_informationTests.swift */,
+				AC0744011BA8869F0039CC9A /* Info.plist */,
+			);
+			path = "uk-traffic-informationTests";
+			sourceTree = "<group>";
+		};
+		AC0744091BA8869F0039CC9A /* uk-traffic-informationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AC07440A1BA8869F0039CC9A /* uk_traffic_informationUITests.swift */,
+				AC07440C1BA8869F0039CC9A /* Info.plist */,
+			);
+			path = "uk-traffic-informationUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC0743E31BA8869F0039CC9A /* uk-traffic-information */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC07440F1BA8869F0039CC9A /* Build configuration list for PBXNativeTarget "uk-traffic-information" */;
+			buildPhases = (
+				AC0743E01BA8869F0039CC9A /* Sources */,
+				AC0743E11BA8869F0039CC9A /* Frameworks */,
+				AC0743E21BA8869F0039CC9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "uk-traffic-information";
+			productName = "uk-traffic-information";
+			productReference = AC0743E41BA8869F0039CC9A /* uk-traffic-information.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AC0743FA1BA8869F0039CC9A /* uk-traffic-informationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC0744121BA8869F0039CC9A /* Build configuration list for PBXNativeTarget "uk-traffic-informationTests" */;
+			buildPhases = (
+				AC0743F71BA8869F0039CC9A /* Sources */,
+				AC0743F81BA8869F0039CC9A /* Frameworks */,
+				AC0743F91BA8869F0039CC9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC0743FD1BA8869F0039CC9A /* PBXTargetDependency */,
+			);
+			name = "uk-traffic-informationTests";
+			productName = "uk-traffic-informationTests";
+			productReference = AC0743FB1BA8869F0039CC9A /* uk-traffic-informationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AC0744051BA8869F0039CC9A /* uk-traffic-informationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC0744151BA8869F0039CC9A /* Build configuration list for PBXNativeTarget "uk-traffic-informationUITests" */;
+			buildPhases = (
+				AC0744021BA8869F0039CC9A /* Sources */,
+				AC0744031BA8869F0039CC9A /* Frameworks */,
+				AC0744041BA8869F0039CC9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC0744081BA8869F0039CC9A /* PBXTargetDependency */,
+			);
+			name = "uk-traffic-informationUITests";
+			productName = "uk-traffic-informationUITests";
+			productReference = AC0744061BA8869F0039CC9A /* uk-traffic-informationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC0743DC1BA8869F0039CC9A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Alex Chesters";
+				TargetAttributes = {
+					AC0743E31BA8869F0039CC9A = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					AC0743FA1BA8869F0039CC9A = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = AC0743E31BA8869F0039CC9A;
+					};
+					AC0744051BA8869F0039CC9A = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = AC0743E31BA8869F0039CC9A;
+					};
+				};
+			};
+			buildConfigurationList = AC0743DF1BA8869F0039CC9A /* Build configuration list for PBXProject "uk-traffic-information" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC0743DB1BA8869F0039CC9A;
+			productRefGroup = AC0743E51BA8869F0039CC9A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC0743E31BA8869F0039CC9A /* uk-traffic-information */,
+				AC0743FA1BA8869F0039CC9A /* uk-traffic-informationTests */,
+				AC0744051BA8869F0039CC9A /* uk-traffic-informationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC0743E21BA8869F0039CC9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC0743F51BA8869F0039CC9A /* LaunchScreen.storyboard in Resources */,
+				AC0743F21BA8869F0039CC9A /* Assets.xcassets in Resources */,
+				AC0743ED1BA8869F0039CC9A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC0743F91BA8869F0039CC9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC0744041BA8869F0039CC9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC0743E01BA8869F0039CC9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC0743EA1BA8869F0039CC9A /* ViewController.swift in Sources */,
+				AC0743F01BA8869F0039CC9A /* uk_traffic_information.xcdatamodeld in Sources */,
+				AC0743E81BA8869F0039CC9A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC0743F71BA8869F0039CC9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC0744001BA8869F0039CC9A /* uk_traffic_informationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC0744021BA8869F0039CC9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC07440B1BA8869F0039CC9A /* uk_traffic_informationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AC0743FD1BA8869F0039CC9A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC0743E31BA8869F0039CC9A /* uk-traffic-information */;
+			targetProxy = AC0743FC1BA8869F0039CC9A /* PBXContainerItemProxy */;
+		};
+		AC0744081BA8869F0039CC9A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC0743E31BA8869F0039CC9A /* uk-traffic-information */;
+			targetProxy = AC0744071BA8869F0039CC9A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AC0743EB1BA8869F0039CC9A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC0743EC1BA8869F0039CC9A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AC0743F31BA8869F0039CC9A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC0743F41BA8869F0039CC9A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AC07440D1BA8869F0039CC9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AC07440E1BA8869F0039CC9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC0744101BA8869F0039CC9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "uk-traffic-information/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "isidoreapps.uk-traffic-information";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AC0744111BA8869F0039CC9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "uk-traffic-information/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "isidoreapps.uk-traffic-information";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AC0744131BA8869F0039CC9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "uk-traffic-informationTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "isidoreapps.uk-traffic-informationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/uk-traffic-information.app/uk-traffic-information";
+			};
+			name = Debug;
+		};
+		AC0744141BA8869F0039CC9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "uk-traffic-informationTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "isidoreapps.uk-traffic-informationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/uk-traffic-information.app/uk-traffic-information";
+			};
+			name = Release;
+		};
+		AC0744161BA8869F0039CC9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "uk-traffic-informationUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "isidoreapps.uk-traffic-informationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "uk-traffic-information";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		AC0744171BA8869F0039CC9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "uk-traffic-informationUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "isidoreapps.uk-traffic-informationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "uk-traffic-information";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC0743DF1BA8869F0039CC9A /* Build configuration list for PBXProject "uk-traffic-information" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC07440D1BA8869F0039CC9A /* Debug */,
+				AC07440E1BA8869F0039CC9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC07440F1BA8869F0039CC9A /* Build configuration list for PBXNativeTarget "uk-traffic-information" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC0744101BA8869F0039CC9A /* Debug */,
+				AC0744111BA8869F0039CC9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AC0744121BA8869F0039CC9A /* Build configuration list for PBXNativeTarget "uk-traffic-informationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC0744131BA8869F0039CC9A /* Debug */,
+				AC0744141BA8869F0039CC9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AC0744151BA8869F0039CC9A /* Build configuration list for PBXNativeTarget "uk-traffic-informationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC0744161BA8869F0039CC9A /* Debug */,
+				AC0744171BA8869F0039CC9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AC0743EE1BA8869F0039CC9A /* uk_traffic_information.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AC0743EF1BA8869F0039CC9A /* uk_traffic_information.xcdatamodel */,
+			);
+			currentVersion = AC0743EF1BA8869F0039CC9A /* uk_traffic_information.xcdatamodel */;
+			path = uk_traffic_information.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AC0743DC1BA8869F0039CC9A /* Project object */;
+}
