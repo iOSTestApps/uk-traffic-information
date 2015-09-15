@@ -36,7 +36,7 @@ public func RSSFeedParser(callback: (returnData: Array<Event>) -> ()) {
     })
 }
 
-func decodeURLComponentsInString(string: String) -> String {
+private func decodeURLComponentsInString(string: String) -> String {
     var decodedString = string
     do {
         let htmlRegex: NSRegularExpression = try NSRegularExpression(pattern: "<.*?>", options: NSRegularExpressionOptions.CaseInsensitive)
