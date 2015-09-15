@@ -75,8 +75,6 @@ class MenuTableViewController: UITableViewController {
         let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         var destViewController: UIViewController
         
-        print(selectedMenuItem)
-        
         switch (indexPath.row) {
         case 0:
             destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("MainTableViewController")
