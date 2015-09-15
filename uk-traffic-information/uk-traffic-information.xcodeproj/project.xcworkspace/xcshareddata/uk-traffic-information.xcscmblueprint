@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "3513F3C2FD195528EFF7157576C385B7280281F3",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "03588A866B39B952C0082117F7E5F7C38CD6C1BC" : 0,
+    "3513F3C2FD195528EFF7157576C385B7280281F3" : 0,
+    "BCDB49ED628DA8AA71FA05685DFF5C163964F4D2" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "470B5BBA-CF43-4301-8704-695BF16D4761",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "03588A866B39B952C0082117F7E5F7C38CD6C1BC" : "RetroUnited\/",
+    "3513F3C2FD195528EFF7157576C385B7280281F3" : "uk-traffic-information\/",
+    "BCDB49ED628DA8AA71FA05685DFF5C163964F4D2" : "ENSwiftSideMenu\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "uk-traffic-information",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "uk-traffic-information\/uk-traffic-information.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:AlexChesters\/RetroUnited.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "03588A866B39B952C0082117F7E5F7C38CD6C1BC"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/AlexChesters\/uk-traffic-information.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3513F3C2FD195528EFF7157576C385B7280281F3"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/evnaz\/ENSwiftSideMenu.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BCDB49ED628DA8AA71FA05685DFF5C163964F4D2"
+    }
+  ]
+}
