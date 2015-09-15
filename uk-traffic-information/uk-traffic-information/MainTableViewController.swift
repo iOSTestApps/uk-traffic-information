@@ -18,6 +18,7 @@ class MainTableViewController: UITableViewController, ENSideMenuDelegate {
         self.title = "All Incidents"
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Menu", style: UIBarButtonItemStyle.Plain, target: self, action: "toggleSideMenu")
         self.sideMenuController()?.sideMenu?.delegate = self
+        self.tableView.rowHeight = 100
         RSSFeedParser( { (data) in
             if data.count != 0 {
                 self.tableData = data
@@ -55,8 +56,9 @@ class MainTableViewController: UITableViewController, ENSideMenuDelegate {
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UKTITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("entry", forIndexPath: indexPath) as! UKTITableViewCell
-        cell.textLabel?.text = tableData[indexPath.row].description
-        cell.detailTextLabel?.text = tableData[indexPath.row].category
+        cell.topLeftLabel?.text = tableData[indexPath.row].description
+        cell.topLeftLabel?.numberOfLines = 0
+        cell.bottomLeftLabel?.text = tableData[indexPath.row].category
         return cell
     }
 

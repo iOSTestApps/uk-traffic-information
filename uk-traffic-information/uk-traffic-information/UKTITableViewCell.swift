@@ -10,6 +10,9 @@ import UIKit
 
 class UKTITableViewCell: UITableViewCell {
 
+    @IBOutlet var topLeftLabel: UILabel!
+    @IBOutlet var bottomLeftLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
