@@ -9,8 +9,11 @@
 import Foundation
 
 public class Event {
+    var category: String!
     var description: String!
-    init(description: String) {
+    
+    init(category: String, description: String) {
+        self.category = category
         self.description = description
     }
 }

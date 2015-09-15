@@ -23,11 +23,13 @@ public func RSSFeedParser(callback: (returnData: Array<Event>) -> ()) {
         if let data = feed {
             for (var i = 0; i < data.items.count; i++) {
                 
+                var category: String!
                 var description: String!
                 
+                category = data.items[i].categories[0]
                 description = data.items[i].itemDescription
                 
-                returnData.append(Event(description: description))
+                returnData.append(Event(category: category, description: description))
             }
         } else {
             callback(returnData: [])

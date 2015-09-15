@@ -56,6 +56,7 @@ class MainTableViewController: UITableViewController, ENSideMenuDelegate {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("entry", forIndexPath: indexPath)
         cell.textLabel?.text = tableData[indexPath.row].description
+        cell.detailTextLabel?.text = tableData[indexPath.row].category
         return cell
     }
 
