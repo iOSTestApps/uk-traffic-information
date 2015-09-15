@@ -11,10 +11,9 @@ import Foundation
 /*
 * Used to parse a URL of a RSS feed and return an array of events.
 * @param {Function} callback - A callback function, this is the place to deal with the data returned from the RSS feed.
-* @returns {Array} - An array of events.
 */
 
-public func RSSFeedParser(callback: (returnData: Array<Event>) -> ()) -> Array<Event> {
+public func RSSFeedParser(callback: (returnData: Array<Event>) -> ()) {
     
     var returnData = [Event]()
     
@@ -35,8 +34,6 @@ public func RSSFeedParser(callback: (returnData: Array<Event>) -> ()) -> Array<E
         }
         callback(returnData: returnData)
     })
-    
-    return returnData
 }
 
 func decodeURLComponentsInString(string: String) -> String {
