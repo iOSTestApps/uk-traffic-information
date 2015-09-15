@@ -11,14 +11,14 @@ import UIKit
 class MenuTableViewController: UITableViewController {
     
     // An array of menu items
-    var menuItems = [String]()
+    var menuItems = [MenuItem]()
     
     var selectedMenuItem : Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        menuItems = ["Home"]
+        menuItems = [MenuItem(title: "Home")]
         
         // Customize apperance of table view
         tableView.contentInset = UIEdgeInsetsMake(64.0, 0, 0, 0) //
@@ -57,7 +57,7 @@ class MenuTableViewController: UITableViewController {
             cell!.selectedBackgroundView = selectedBackgroundView
         }
         
-        cell!.textLabel?.text = menuItems[indexPath.row]
+        cell!.textLabel?.text = menuItems[indexPath.row].title
         
         return cell!
     }

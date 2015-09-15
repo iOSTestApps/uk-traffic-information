@@ -19,6 +19,7 @@
 		AC0744201BA88BB70039CC9A /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC07441F1BA88BB70039CC9A /* MainNavigationController.swift */; };
 		AC0744221BA892250039CC9A /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0744211BA892250039CC9A /* MenuTableViewController.swift */; };
 		AC0744241BA893730039CC9A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0744231BA893730039CC9A /* MainViewController.swift */; };
+		ACD857BA1BA8987A00861BE1 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD857B91BA8987A00861BE1 /* MenuItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		AC07441F1BA88BB70039CC9A /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		AC0744211BA892250039CC9A /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		AC0744231BA893730039CC9A /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		ACD857B91BA8987A00861BE1 /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,9 +169,18 @@
 		ACD857B71BA8970900861BE1 /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				ACD857B81BA8986200861BE1 /* classes */,
 				AC0744181BA889CB0039CC9A /* menu */,
 			);
 			name = lib;
+			sourceTree = "<group>";
+		};
+		ACD857B81BA8986200861BE1 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				ACD857B91BA8987A00861BE1 /* MenuItem.swift */,
+			);
+			name = classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,6 +318,7 @@
 				AC07441B1BA88A320039CC9A /* ENSideMenu.swift in Sources */,
 				AC0744221BA892250039CC9A /* MenuTableViewController.swift in Sources */,
 				AC0743F01BA8869F0039CC9A /* uk_traffic_information.xcdatamodeld in Sources */,
+				ACD857BA1BA8987A00861BE1 /* MenuItem.swift in Sources */,
 				AC07441C1BA88A320039CC9A /* ENSideMenuNavigationController.swift in Sources */,
 				AC0743E81BA8869F0039CC9A /* AppDelegate.swift in Sources */,
 			);
