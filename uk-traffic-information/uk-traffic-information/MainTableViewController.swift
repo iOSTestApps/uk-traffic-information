@@ -51,6 +51,7 @@ class MainTableViewController: UITableViewController, ENSideMenuDelegate {
         cell.topLeftLabel?.text = tableData[indexPath.row].description
         cell.topLeftLabel?.numberOfLines = 0
         cell.bottomLeftLabel?.text = tableData[indexPath.row].category
+        cell.bottomRightLabel?.text = "\(tableData[indexPath.row].region) - \(tableData[indexPath.row].road)"
         return cell
     }
 

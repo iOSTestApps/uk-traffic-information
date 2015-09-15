@@ -12,6 +12,7 @@ class UKTITableViewCell: UITableViewCell {
 
     @IBOutlet var topLeftLabel: UILabel!
     @IBOutlet var bottomLeftLabel: UILabel!
+    @IBOutlet var bottomRightLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

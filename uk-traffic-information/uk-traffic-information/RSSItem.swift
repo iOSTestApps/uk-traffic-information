@@ -67,6 +67,10 @@ class RSSItem: NSObject, NSCoding {
         return [NSURL]()
     }
     
+    // Highways Agency specifics
+    var road: String?
+    var region: String?
+    
     override init()
     {
         super.init()
@@ -88,6 +92,8 @@ class RSSItem: NSObject, NSCoding {
         commentRSSLink = aDecoder.decodeObjectForKey("commentRSSLink") as? NSURL
         author = aDecoder.decodeObjectForKey("author") as? String
         categories = aDecoder.decodeObjectForKey("categories") as? [String]
+        road = aDecoder.decodeObjectForKey("road") as? String
+        region = aDecoder.decodeObjectForKey("region") as? String
     }
     
     func encodeWithCoder(aCoder: NSCoder)
@@ -143,5 +149,13 @@ class RSSItem: NSObject, NSCoding {
         }
         
         aCoder.encodeObject(categories, forKey: "categories")
+        
+        if let road = self.road {
+            aCoder.encodeObject(road, forKey: "road")
+        }
+        
+        if let region = self.region {
+            aCoder.encodeObject(region, forKey: "region")
+        }
     }
 }

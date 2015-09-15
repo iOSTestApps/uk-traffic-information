@@ -41,6 +41,9 @@ class RSSParser: NSObject, NSXMLParserDelegate {
     let node_commentRSSLink = "wfw:commentRss"
     let node_author = "dc:creator"
     let node_category = "category"
+    // highways agency specifics
+    let node_road = "road"
+    let node_region = "region"
     
     func parseFeedForRequest(request: NSURLRequest, callback: (feed: RSSFeed?, error: NSError?) -> Void)
     {
@@ -154,6 +157,14 @@ class RSSParser: NSObject, NSXMLParserDelegate {
             if elementName == node_category
             {
                 item.categories.append(self.currentElement)
+            }
+            
+            if elementName == node_road {
+                item.road = self.currentElement
+            }
+            
+            if elementName == node_region {
+                item.region = self.currentElement
             }
             
         }

@@ -11,9 +11,13 @@ import Foundation
 public class Event {
     var category: String!
     var description: String!
+    var road: String!
+    var region: String!
     
-    init(category: String, description: String) {
+    init(category: String, description: String, road: String, region: String) {
         self.category = category
         self.description = description
+        self.road = road
+        self.region = region
     }
 }
