@@ -30,7 +30,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="entry" textLabel="ra0-T2-gbO" detailTextLabel="qlj-v1-tQe" style="IBUITableViewCellStyleSubtitle" id="Nsk-7O-VUV">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="entry" textLabel="ra0-T2-gbO" detailTextLabel="qlj-v1-tQe" style="IBUITableViewCellStyleSubtitle" id="Nsk-7O-VUV" customClass="UKTITableViewCell" customModule="uk_traffic_information" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Nsk-7O-VUV" id="x1k-nv-VzI">
