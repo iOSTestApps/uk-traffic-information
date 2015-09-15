@@ -8,13 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		AC0743E81BA8869F0039CC9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0743E71BA8869F0039CC9A /* AppDelegate.swift */; };
-		AC0743EA1BA8869F0039CC9A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0743E91BA8869F0039CC9A /* ViewController.swift */; };
 		AC0743ED1BA8869F0039CC9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC0743EB1BA8869F0039CC9A /* Main.storyboard */; };
 		AC0743F01BA8869F0039CC9A /* uk_traffic_information.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC0743EE1BA8869F0039CC9A /* uk_traffic_information.xcdatamodeld */; };
 		AC0743F21BA8869F0039CC9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC0743F11BA8869F0039CC9A /* Assets.xcassets */; };
 		AC0743F51BA8869F0039CC9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC0743F31BA8869F0039CC9A /* LaunchScreen.storyboard */; };
 		AC0744001BA8869F0039CC9A /* uk_traffic_informationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0743FF1BA8869F0039CC9A /* uk_traffic_informationTests.swift */; };
 		AC07440B1BA8869F0039CC9A /* uk_traffic_informationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC07440A1BA8869F0039CC9A /* uk_traffic_informationUITests.swift */; };
+		AC07441B1BA88A320039CC9A /* ENSideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0744191BA88A320039CC9A /* ENSideMenu.swift */; };
+		AC07441C1BA88A320039CC9A /* ENSideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC07441A1BA88A320039CC9A /* ENSideMenuNavigationController.swift */; };
+		AC0744201BA88BB70039CC9A /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC07441F1BA88BB70039CC9A /* MainNavigationController.swift */; };
+		AC0744221BA892250039CC9A /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0744211BA892250039CC9A /* MenuTableViewController.swift */; };
+		AC0744241BA893730039CC9A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0744231BA893730039CC9A /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +41,6 @@
 /* Begin PBXFileReference section */
 		AC0743E41BA8869F0039CC9A /* uk-traffic-information.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "uk-traffic-information.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC0743E71BA8869F0039CC9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AC0743E91BA8869F0039CC9A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AC0743EC1BA8869F0039CC9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC0743EF1BA8869F0039CC9A /* uk_traffic_information.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = uk_traffic_information.xcdatamodel; sourceTree = "<group>"; };
 		AC0743F11BA8869F0039CC9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +52,11 @@
 		AC0744061BA8869F0039CC9A /* uk-traffic-informationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "uk-traffic-informationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC07440A1BA8869F0039CC9A /* uk_traffic_informationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uk_traffic_informationUITests.swift; sourceTree = "<group>"; };
 		AC07440C1BA8869F0039CC9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC0744191BA88A320039CC9A /* ENSideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ENSideMenu.swift; path = ../../../ENSwiftSideMenu/Library/ENSideMenu.swift; sourceTree = "<group>"; };
+		AC07441A1BA88A320039CC9A /* ENSideMenuNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ENSideMenuNavigationController.swift; path = ../../../ENSwiftSideMenu/Library/ENSideMenuNavigationController.swift; sourceTree = "<group>"; };
+		AC07441F1BA88BB70039CC9A /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		AC0744211BA892250039CC9A /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		AC0744231BA893730039CC9A /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +107,9 @@
 		AC0743E61BA8869F0039CC9A /* uk-traffic-information */ = {
 			isa = PBXGroup;
 			children = (
+				AC07441D1BA88A390039CC9A /* views */,
+				AC0744181BA889CB0039CC9A /* menu */,
 				AC0743E71BA8869F0039CC9A /* AppDelegate.swift */,
-				AC0743E91BA8869F0039CC9A /* ViewController.swift */,
 				AC0743EB1BA8869F0039CC9A /* Main.storyboard */,
 				AC0743F11BA8869F0039CC9A /* Assets.xcassets */,
 				AC0743F31BA8869F0039CC9A /* LaunchScreen.storyboard */,
@@ -126,6 +135,33 @@
 				AC07440C1BA8869F0039CC9A /* Info.plist */,
 			);
 			path = "uk-traffic-informationUITests";
+			sourceTree = "<group>";
+		};
+		AC0744181BA889CB0039CC9A /* menu */ = {
+			isa = PBXGroup;
+			children = (
+				AC0744191BA88A320039CC9A /* ENSideMenu.swift */,
+				AC07441A1BA88A320039CC9A /* ENSideMenuNavigationController.swift */,
+			);
+			name = menu;
+			sourceTree = "<group>";
+		};
+		AC07441D1BA88A390039CC9A /* views */ = {
+			isa = PBXGroup;
+			children = (
+				AC07441E1BA88A400039CC9A /* view-controllers */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+		AC07441E1BA88A400039CC9A /* view-controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AC07441F1BA88BB70039CC9A /* MainNavigationController.swift */,
+				AC0744211BA892250039CC9A /* MenuTableViewController.swift */,
+				AC0744231BA893730039CC9A /* MainViewController.swift */,
+			);
+			name = "view-controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +294,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC0743EA1BA8869F0039CC9A /* ViewController.swift in Sources */,
+				AC0744241BA893730039CC9A /* MainViewController.swift in Sources */,
+				AC0744201BA88BB70039CC9A /* MainNavigationController.swift in Sources */,
+				AC07441B1BA88A320039CC9A /* ENSideMenu.swift in Sources */,
+				AC0744221BA892250039CC9A /* MenuTableViewController.swift in Sources */,
 				AC0743F01BA8869F0039CC9A /* uk_traffic_information.xcdatamodeld in Sources */,
+				AC07441C1BA88A320039CC9A /* ENSideMenuNavigationController.swift in Sources */,
 				AC0743E81BA8869F0039CC9A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -403,6 +443,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "uk-traffic-information/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "isidoreapps.uk-traffic-information";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -414,6 +455,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "uk-traffic-information/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "isidoreapps.uk-traffic-information";
 				PRODUCT_NAME = "$(TARGET_NAME)";
