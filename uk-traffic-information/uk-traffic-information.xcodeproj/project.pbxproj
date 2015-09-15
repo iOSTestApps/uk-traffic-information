@@ -18,6 +18,12 @@
 		AC07441C1BA88A320039CC9A /* ENSideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC07441A1BA88A320039CC9A /* ENSideMenuNavigationController.swift */; };
 		AC0744201BA88BB70039CC9A /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC07441F1BA88BB70039CC9A /* MainNavigationController.swift */; };
 		AC0744221BA892250039CC9A /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0744211BA892250039CC9A /* MenuTableViewController.swift */; };
+		ACD3C6AE1BA8B57600BA1A7B /* NSDate+dateFromInternetDateTimeString.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD3C6A91BA8B57600BA1A7B /* NSDate+dateFromInternetDateTimeString.swift */; };
+		ACD3C6AF1BA8B57600BA1A7B /* RSSFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD3C6AA1BA8B57600BA1A7B /* RSSFeed.swift */; };
+		ACD3C6B01BA8B57600BA1A7B /* RSSItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD3C6AB1BA8B57600BA1A7B /* RSSItem.swift */; };
+		ACD3C6B11BA8B57600BA1A7B /* RSSParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD3C6AC1BA8B57600BA1A7B /* RSSParser.swift */; };
+		ACD3C6B21BA8B57600BA1A7B /* String+imageLinksFromHTML.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD3C6AD1BA8B57600BA1A7B /* String+imageLinksFromHTML.swift */; };
+		ACD3C6B41BA8B5C200BA1A7B /* Rss.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD3C6B31BA8B5C200BA1A7B /* Rss.swift */; };
 		ACD857BA1BA8987A00861BE1 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD857B91BA8987A00861BE1 /* MenuItem.swift */; };
 		ACD857BC1BA8A4B600861BE1 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD857BB1BA8A4B600861BE1 /* MainTableViewController.swift */; };
 		ACD857C41BA8A94800861BE1 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD857C31BA8A94800861BE1 /* Event.swift */; };
@@ -60,6 +66,12 @@
 		AC07441A1BA88A320039CC9A /* ENSideMenuNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ENSideMenuNavigationController.swift; path = ../../../ENSwiftSideMenu/Library/ENSideMenuNavigationController.swift; sourceTree = "<group>"; };
 		AC07441F1BA88BB70039CC9A /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		AC0744211BA892250039CC9A /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		ACD3C6A91BA8B57600BA1A7B /* NSDate+dateFromInternetDateTimeString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+dateFromInternetDateTimeString.swift"; sourceTree = "<group>"; };
+		ACD3C6AA1BA8B57600BA1A7B /* RSSFeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSFeed.swift; sourceTree = "<group>"; };
+		ACD3C6AB1BA8B57600BA1A7B /* RSSItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSItem.swift; sourceTree = "<group>"; };
+		ACD3C6AC1BA8B57600BA1A7B /* RSSParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSParser.swift; sourceTree = "<group>"; };
+		ACD3C6AD1BA8B57600BA1A7B /* String+imageLinksFromHTML.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+imageLinksFromHTML.swift"; sourceTree = "<group>"; };
+		ACD3C6B31BA8B5C200BA1A7B /* Rss.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rss.swift; sourceTree = "<group>"; };
 		ACD857B91BA8987A00861BE1 /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		ACD857BB1BA8A4B600861BE1 /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		ACD857C31BA8A94800861BE1 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
@@ -175,9 +187,23 @@
 			name = "view-controllers";
 			sourceTree = "<group>";
 		};
+		ACCF3AC71BA8B4A70033D227 /* rss */ = {
+			isa = PBXGroup;
+			children = (
+				ACD3C6B31BA8B5C200BA1A7B /* Rss.swift */,
+				ACD3C6A91BA8B57600BA1A7B /* NSDate+dateFromInternetDateTimeString.swift */,
+				ACD3C6AA1BA8B57600BA1A7B /* RSSFeed.swift */,
+				ACD3C6AB1BA8B57600BA1A7B /* RSSItem.swift */,
+				ACD3C6AC1BA8B57600BA1A7B /* RSSParser.swift */,
+				ACD3C6AD1BA8B57600BA1A7B /* String+imageLinksFromHTML.swift */,
+			);
+			name = rss;
+			sourceTree = "<group>";
+		};
 		ACD857B71BA8970900861BE1 /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				ACCF3AC71BA8B4A70033D227 /* rss */,
 				ACD857B81BA8986200861BE1 /* classes */,
 				AC0744181BA889CB0039CC9A /* menu */,
 			);
@@ -351,13 +377,19 @@
 			files = (
 				AC0744201BA88BB70039CC9A /* MainNavigationController.swift in Sources */,
 				ACD857C41BA8A94800861BE1 /* Event.swift in Sources */,
+				ACD3C6AF1BA8B57600BA1A7B /* RSSFeed.swift in Sources */,
+				ACD3C6B11BA8B57600BA1A7B /* RSSParser.swift in Sources */,
+				ACD3C6B01BA8B57600BA1A7B /* RSSItem.swift in Sources */,
 				AC07441B1BA88A320039CC9A /* ENSideMenu.swift in Sources */,
 				AC0744221BA892250039CC9A /* MenuTableViewController.swift in Sources */,
 				ACD857BC1BA8A4B600861BE1 /* MainTableViewController.swift in Sources */,
 				AC0743F01BA8869F0039CC9A /* uk_traffic_information.xcdatamodeld in Sources */,
 				ACD857BA1BA8987A00861BE1 /* MenuItem.swift in Sources */,
 				AC07441C1BA88A320039CC9A /* ENSideMenuNavigationController.swift in Sources */,
+				ACD3C6B21BA8B57600BA1A7B /* String+imageLinksFromHTML.swift in Sources */,
 				AC0743E81BA8869F0039CC9A /* AppDelegate.swift in Sources */,
+				ACD3C6B41BA8B5C200BA1A7B /* Rss.swift in Sources */,
+				ACD3C6AE1BA8B57600BA1A7B /* NSDate+dateFromInternetDateTimeString.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

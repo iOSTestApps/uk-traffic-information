@@ -17,6 +17,12 @@ class MainTableViewController: UITableViewController, ENSideMenuDelegate {
         super.viewDidLoad()
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Menu", style: UIBarButtonItemStyle.Plain, target: self, action: "toggleSideMenu")
         self.sideMenuController()?.sideMenu?.delegate = self
+        RSSFeedParser( { (data) in
+            if data.count != 0 {
+                self.tableData = data
+                self.tableView.reloadData()
+            }
+        })
     }
     
     func toggleSideMenu() {

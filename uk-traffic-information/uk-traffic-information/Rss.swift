@@ -1,0 +1,61 @@
+//
+//  Rss.swift
+//  RetroUnited
+//
+//  Created by Alex Chesters on 12/08/2015.
+//  Copyright (c) 2015 Alex Chesters. All rights reserved.
+//
+
+import Foundation
+
+/*
+* Used to parse a URL of a RSS feed and return an array of events.
+* @param {Function} callback - A callback function, this is the place to deal with the data returned from the RSS feed.
+* @returns {Array} - An array of events.
+*/
+
+public func RSSFeedParser(callback: (returnData: Array<Event>) -> ()) -> Array<Event> {
+    
+    var returnData = [Event]()
+    
+    let request: NSURLRequest = NSURLRequest(URL: NSURL(string: "http://m.highways.gov.uk/feeds/rss/AllEvents.xml")!, cachePolicy: NSURLRequestCachePolicy.ReloadIgnoringLocalAndRemoteCacheData, timeoutInterval: 12.0)
+    
+    RSSParser.parseFeedForRequest(request, callback: { (feed, error) -> Void in
+        if let data = feed {
+            for (var i = 0; i < data.items.count; i++) {
+                
+                var description: String!
+                
+                description = data.items[i].itemDescription
+                
+                returnData.append(Event(description: description))
+            }
+        } else {
+            callback(returnData: [])
+        }
+        callback(returnData: returnData)
+    })
+    
+    return returnData
+}
+
+func decodeURLComponentsInString(string: String) -> String {
+    var decodedString = string
+    do {
+        let htmlRegex: NSRegularExpression = try NSRegularExpression(pattern: "<.*?>", options: NSRegularExpressionOptions.CaseInsensitive)
+        decodedString = htmlRegex.stringByReplacingMatchesInString(decodedString, options: NSMatchingOptions(rawValue: 0), range: NSMakeRange(0, decodedString.characters.count), withTemplate: "")
+        decodedString = decodedString.stringByReplacingOccurrencesOfString("View image | gettyimages.com", withString: "")
+        decodedString = decodedString.stringByReplacingOccurrencesOfString("&#8217;", withString: "'")
+        decodedString = decodedString.stringByReplacingOccurrencesOfString("&#8216;", withString: "'")
+        decodedString = decodedString.stringByReplacingOccurrencesOfString("&#8220;", withString: "\"")
+        decodedString = decodedString.stringByReplacingOccurrencesOfString("&#8221;", withString: "\"")
+        decodedString = decodedString.stringByReplacingOccurrencesOfString("&#8243;", withString: "\"")
+        decodedString = decodedString.stringByReplacingOccurrencesOfString("&#8211;", withString: "-")
+        decodedString = decodedString.stringByReplacingOccurrencesOfString("&#8230;", withString: "...")
+        decodedString = decodedString.stringByReplacingOccurrencesOfString("&#038;", withString: "&")
+        decodedString = decodedString.stringByReplacingOccurrencesOfString("&nbsp;", withString: "\n")
+    } catch {
+        
+    }
+    return decodedString
+}
