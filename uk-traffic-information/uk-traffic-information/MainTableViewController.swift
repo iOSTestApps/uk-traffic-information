@@ -15,6 +15,7 @@ class MainTableViewController: UITableViewController, ENSideMenuDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "All Incidents"
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Menu", style: UIBarButtonItemStyle.Plain, target: self, action: "toggleSideMenu")
         self.sideMenuController()?.sideMenu?.delegate = self
         RSSFeedParser( { (data) in
