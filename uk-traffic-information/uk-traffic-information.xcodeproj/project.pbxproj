@@ -107,8 +107,8 @@
 		AC0743E61BA8869F0039CC9A /* uk-traffic-information */ = {
 			isa = PBXGroup;
 			children = (
+				ACD857B71BA8970900861BE1 /* lib */,
 				AC07441D1BA88A390039CC9A /* views */,
-				AC0744181BA889CB0039CC9A /* menu */,
 				AC0743E71BA8869F0039CC9A /* AppDelegate.swift */,
 				AC0743EB1BA8869F0039CC9A /* Main.storyboard */,
 				AC0743F11BA8869F0039CC9A /* Assets.xcassets */,
@@ -162,6 +162,14 @@
 				AC0744231BA893730039CC9A /* MainViewController.swift */,
 			);
 			name = "view-controllers";
+			sourceTree = "<group>";
+		};
+		ACD857B71BA8970900861BE1 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				AC0744181BA889CB0039CC9A /* menu */,
+			);
+			name = lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -529,6 +537,7 @@
 				AC0744111BA8869F0039CC9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AC0744121BA8869F0039CC9A /* Build configuration list for PBXNativeTarget "uk-traffic-informationTests" */ = {
 			isa = XCConfigurationList;
@@ -537,6 +546,7 @@
 				AC0744141BA8869F0039CC9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AC0744151BA8869F0039CC9A /* Build configuration list for PBXNativeTarget "uk-traffic-informationUITests" */ = {
 			isa = XCConfigurationList;
@@ -545,6 +555,7 @@
 				AC0744171BA8869F0039CC9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
