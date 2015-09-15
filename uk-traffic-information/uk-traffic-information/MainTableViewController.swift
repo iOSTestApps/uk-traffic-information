@@ -9,6 +9,9 @@
 import UIKit
 
 class MainTableViewController: UITableViewController, ENSideMenuDelegate {
+    
+    // The data used to populate the table
+    var tableData = [Event]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,14 +43,12 @@ class MainTableViewController: UITableViewController, ENSideMenuDelegate {
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return tableData.count
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("entry", forIndexPath: indexPath)
-
-        // Configure the cell...
-
+        cell.textLabel?.text = tableData[indexPath.row].description
         return cell
     }
 

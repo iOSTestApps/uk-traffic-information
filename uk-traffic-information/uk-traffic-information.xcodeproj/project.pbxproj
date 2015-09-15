@@ -22,6 +22,7 @@
 		ACD857BC1BA8A4B600861BE1 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD857BB1BA8A4B600861BE1 /* MainTableViewController.swift */; };
 		ACD857C11BA8A67700861BE1 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD857BF1BA8A67700861BE1 /* Fabric.framework */; };
 		ACD857C21BA8A67700861BE1 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD857C01BA8A67700861BE1 /* Crashlytics.framework */; };
+		ACD857C41BA8A94800861BE1 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD857C31BA8A94800861BE1 /* Event.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		ACD857BB1BA8A4B600861BE1 /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		ACD857BF1BA8A67700861BE1 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = SOURCE_ROOT; };
 		ACD857C01BA8A67700861BE1 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = SOURCE_ROOT; };
+		ACD857C31BA8A94800861BE1 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				ACD857B91BA8987A00861BE1 /* MenuItem.swift */,
+				ACD857C31BA8A94800861BE1 /* Event.swift */,
 			);
 			name = classes;
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC0744201BA88BB70039CC9A /* MainNavigationController.swift in Sources */,
+				ACD857C41BA8A94800861BE1 /* Event.swift in Sources */,
 				AC07441B1BA88A320039CC9A /* ENSideMenu.swift in Sources */,
 				AC0744221BA892250039CC9A /* MenuTableViewController.swift in Sources */,
 				ACD857BC1BA8A4B600861BE1 /* MainTableViewController.swift in Sources */,
