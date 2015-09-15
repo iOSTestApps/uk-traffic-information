@@ -22,11 +22,11 @@ class MainNavigationController: ENSideMenuNavigationController, ENSideMenuDelega
     
     // MARK: - ENSideMenu Delegate
     func sideMenuWillOpen() {
-        print("sideMenuWillOpen")
+        
     }
     
     func sideMenuWillClose() {
-        print("sideMenuWillClose")
+        
     }
     
     /*
