@@ -30,16 +30,8 @@ public func RSSFeedParser(callback: (returnData: Array<Event>) -> ()) {
                 
                 category = data.items[i].categories[0]
                 description = data.items[i].itemDescription
-                if let roadName = data.items[i].road {
-                    road = roadName
-                } else {
-                    road = "null"
-                }
-                if let regionName = data.items[i].region {
-                    region = regionName
-                } else {
-                    region = "null"
-                }
+                road = data.items[i].road
+                region = data.items[i].region
                 
                 returnData.append(Event(category: category, description: description, road: road, region: region))
             }
