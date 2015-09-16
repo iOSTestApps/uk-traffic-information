@@ -20,7 +20,7 @@ class MenuTableViewController: UITableViewController {
         
         let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         menuItems = [
-            MenuItem(title: "Home", viewController: mainStoryboard.instantiateViewControllerWithIdentifier("MainTableViewController")),
+            MenuItem(title: "All Incidents", viewController: mainStoryboard.instantiateViewControllerWithIdentifier("MainTableViewController")),
             MenuItem(title: "Settings", viewController: mainStoryboard.instantiateViewControllerWithIdentifier("MainTableViewController"))
         ]
         
