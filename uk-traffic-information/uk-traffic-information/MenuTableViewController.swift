@@ -24,9 +24,8 @@ class MenuTableViewController: UITableViewController {
             MenuItem(title: "Settings", viewController: mainStoryboard.instantiateViewControllerWithIdentifier("MainTableViewController"))
         ]
         
-        // Customize apperance of table view
-        tableView.contentInset = UIEdgeInsetsMake(64.0, 0, 0, 0) //
-        tableView.separatorStyle = .None
+        tableView.contentInset = UIEdgeInsetsMake(64.0, 0, 0, 0)
+        tableView.separatorStyle = UITableViewCellSeparatorStyle.None
         tableView.backgroundColor = UIColor.clearColor()
         tableView.scrollsToTop = false
         
