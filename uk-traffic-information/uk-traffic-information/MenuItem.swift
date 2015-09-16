@@ -7,10 +7,14 @@
 //
 
 import Foundation
+import UIKit
 
 public class MenuItem {
     var title: String!
-    init(title: String) {
+    var viewController: UIViewController!
+    
+    init(title: String, viewController: UIViewController) {
         self.title = title
+        self.viewController = viewController
     }
 }

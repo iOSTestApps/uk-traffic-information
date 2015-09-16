@@ -18,7 +18,8 @@ class MenuTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        menuItems = [MenuItem(title: "Home"), MenuItem(title: "Settings")]
+        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        menuItems = [MenuItem(title: "Home", viewController: mainStoryboard.instantiateViewControllerWithIdentifier("MainTableViewController")), MenuItem(title: "Settings", viewController: mainStoryboard.instantiateViewControllerWithIdentifier("MainTableViewController"))]
         
         // Customize apperance of table view
         tableView.contentInset = UIEdgeInsetsMake(64.0, 0, 0, 0) //
@@ -72,15 +73,14 @@ class MenuTableViewController: UITableViewController {
         
         selectedMenuIndex = indexPath.row
         
-        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         var destViewController: UIViewController
         
         switch (indexPath.row) {
         case 0:
-            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("MainTableViewController")
+            destViewController = menuItems[indexPath.row].viewController
             break
         default:
-            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("MainTableViewController")
+            destViewController = menuItems[indexPath.row].viewController
             break
         }
         
