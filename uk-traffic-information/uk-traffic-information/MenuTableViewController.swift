@@ -13,7 +13,7 @@ class MenuTableViewController: UITableViewController {
     // An array of menu items
     var menuItems = [MenuItem]()
     
-    var selectedMenuItem : Int = 0
+    var selectedMenuItem: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
