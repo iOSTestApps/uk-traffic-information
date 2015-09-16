@@ -13,7 +13,7 @@ class MenuTableViewController: UITableViewController {
     // An array of menu items
     var menuItems = [MenuItem]()
     
-    var selectedMenuItem: Int = 0
+    var selectedMenuIndex: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +29,7 @@ class MenuTableViewController: UITableViewController {
         // Preserve selection between presentations
         self.clearsSelectionOnViewWillAppear = false
         
-        tableView.selectRowAtIndexPath(NSIndexPath(forRow: selectedMenuItem, inSection: 0), animated: false, scrollPosition: .Middle)
+        tableView.selectRowAtIndexPath(NSIndexPath(forRow: selectedMenuIndex, inSection: 0), animated: false, scrollPosition: .Middle)
     }
     
     // MARK: - Table view data source
@@ -68,9 +68,9 @@ class MenuTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
-        if (indexPath.row == selectedMenuItem) { return }
+        if (indexPath.row == selectedMenuIndex) { return }
         
-        selectedMenuItem = indexPath.row
+        selectedMenuIndex = indexPath.row
         
         let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         var destViewController: UIViewController
