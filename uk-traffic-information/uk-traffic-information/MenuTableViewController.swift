@@ -73,18 +73,7 @@ class MenuTableViewController: UITableViewController {
         
         selectedMenuIndex = indexPath.row
         
-        var destViewController: UIViewController
-        
-        switch (indexPath.row) {
-        case 0:
-            destViewController = menuItems[indexPath.row].viewController
-            break
-        default:
-            destViewController = menuItems[indexPath.row].viewController
-            break
-        }
-        
-        sideMenuController()?.setContentViewController(destViewController)
+        sideMenuController()?.setContentViewController(menuItems[indexPath.row].viewController)
     }
     
     
