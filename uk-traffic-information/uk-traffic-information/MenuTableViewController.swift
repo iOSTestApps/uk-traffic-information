@@ -19,7 +19,10 @@ class MenuTableViewController: UITableViewController {
         super.viewDidLoad()
         
         let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        menuItems = [MenuItem(title: "Home", viewController: mainStoryboard.instantiateViewControllerWithIdentifier("MainTableViewController")), MenuItem(title: "Settings", viewController: mainStoryboard.instantiateViewControllerWithIdentifier("MainTableViewController"))]
+        menuItems = [
+            MenuItem(title: "Home", viewController: mainStoryboard.instantiateViewControllerWithIdentifier("MainTableViewController")),
+            MenuItem(title: "Settings", viewController: mainStoryboard.instantiateViewControllerWithIdentifier("MainTableViewController"))
+        ]
         
         // Customize apperance of table view
         tableView.contentInset = UIEdgeInsetsMake(64.0, 0, 0, 0) //
