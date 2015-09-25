@@ -11,10 +11,15 @@ import MapKit
 
 class DetailViewController: UIViewController, MKMapViewDelegate {
 
+    var selectedEvent: Event!
+    
     @IBOutlet var mapView: MKMapView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        mapView.delegate = self
+        let region = MKCoordinateRegionMakeWithDistance(selectedEvent.location.coordinate, 1000 * 2.0, 1000 * 2.0)
+        mapView.setRegion(region, animated: true)
         mapView.mapType = MKMapType.Hybrid
     }
 

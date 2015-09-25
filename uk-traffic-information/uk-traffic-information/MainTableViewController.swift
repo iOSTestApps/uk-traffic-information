@@ -12,6 +12,9 @@ class MainTableViewController: UITableViewController, ENSideMenuDelegate {
     
     // The data used to populate the table
     var tableData = [Event]()
+    
+    // The selected event, this is used to pass information to the DetailViewController
+    var selectedEvent: Event!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,17 +59,18 @@ class MainTableViewController: UITableViewController, ENSideMenuDelegate {
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        selectedEvent = tableData[indexPath.row]
         self.performSegueWithIdentifier("openDetail", sender: self)
     }
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "openDetail" {
+            let svc = segue.destinationViewController as! DetailViewController
+            svc.selectedEvent = selectedEvent
+        }
     }
-    */
 
 }

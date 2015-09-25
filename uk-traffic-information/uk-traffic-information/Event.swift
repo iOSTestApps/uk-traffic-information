@@ -16,6 +16,7 @@ public class Event {
     var region: String!
     var latitude: CLLocationDegrees!
     var longitude: CLLocationDegrees!
+    var location: CLLocation!
     
     init(category: String, description: String, road: String, region: String, latitude: String, longitude: String) {
         self.category = category
@@ -24,5 +25,6 @@ public class Event {
         self.region = region
         self.latitude = (latitude as NSString).doubleValue
         self.longitude = (longitude as NSString).doubleValue
+        self.location = CLLocation(latitude: self.latitude, longitude: self.longitude)
     }
 }
