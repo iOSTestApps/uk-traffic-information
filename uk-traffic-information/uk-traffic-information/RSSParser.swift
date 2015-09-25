@@ -44,6 +44,8 @@ class RSSParser: NSObject, NSXMLParserDelegate {
     // highways agency specifics
     let node_road = "road"
     let node_region = "region"
+    let node_latitude = "latitude"
+    let node_longitude = "longitude"
     
     func parseFeedForRequest(request: NSURLRequest, callback: (feed: RSSFeed?, error: NSError?) -> Void)
     {
@@ -165,6 +167,14 @@ class RSSParser: NSObject, NSXMLParserDelegate {
             
             if elementName == node_region {
                 item.region = self.currentElement
+            }
+            
+            if elementName == node_latitude {
+                item.latitude = self.currentElement
+            }
+            
+            if elementName == node_longitude {
+                item.longitude = self.currentElement
             }
             
         }

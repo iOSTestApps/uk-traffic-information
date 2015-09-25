@@ -70,6 +70,8 @@ class RSSItem: NSObject, NSCoding {
     // Highways Agency specifics
     var road: String?
     var region: String?
+    var latitude: String?
+    var longitude: String?
     
     override init()
     {
@@ -94,6 +96,8 @@ class RSSItem: NSObject, NSCoding {
         categories = aDecoder.decodeObjectForKey("categories") as? [String]
         road = aDecoder.decodeObjectForKey("road") as? String
         region = aDecoder.decodeObjectForKey("region") as? String
+        latitude = aDecoder.decodeObjectForKey("latitude") as? String
+        longitude = aDecoder.decodeObjectForKey("longitude") as? String
     }
     
     func encodeWithCoder(aCoder: NSCoder)
@@ -156,6 +160,14 @@ class RSSItem: NSObject, NSCoding {
         
         if let region = self.region {
             aCoder.encodeObject(region, forKey: "region")
+        }
+        
+        if let latitude = self.latitude {
+            aCoder.encodeObject(latitude, forKey: "latitude")
+        }
+        
+        if let longitude = self.longitude {
+            aCoder.encodeObject(longitude, forKey: "longitude")
         }
     }
 }

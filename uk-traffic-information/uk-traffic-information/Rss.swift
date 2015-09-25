@@ -27,13 +27,17 @@ public func RSSFeedParser(callback: (returnData: Array<Event>) -> ()) {
                 var description: String!
                 var road: String!
                 var region: String!
+                var latitude: String!
+                var longitude: String!
                 
                 category = data.items[i].categories[0]
                 description = data.items[i].itemDescription
                 road = data.items[i].road
                 region = data.items[i].region
+                latitude = data.items[i].latitude
+                longitude = data.items[i].longitude
                 
-                returnData.append(Event(category: category, description: description, road: road, region: region))
+                returnData.append(Event(category: category, description: description, road: road, region: region, latitude: latitude, longitude: longitude))
             }
         } else {
             callback(returnData: [])

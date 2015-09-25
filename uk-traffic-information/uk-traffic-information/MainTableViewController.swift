@@ -54,6 +54,10 @@ class MainTableViewController: UITableViewController, ENSideMenuDelegate {
         cell.bottomRightLabel?.text = "\(tableData[indexPath.row].region) - \(tableData[indexPath.row].road)"
         return cell
     }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        print(tableData[indexPath.row].latitude)
+    }
 
     /*
     // MARK: - Navigation

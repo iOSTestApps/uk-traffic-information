@@ -7,17 +7,22 @@
 //
 
 import Foundation
+import CoreLocation
 
 public class Event {
     var category: String!
     var description: String!
     var road: String!
     var region: String!
+    var latitude: CLLocationDegrees!
+    var longitude: CLLocationDegrees!
     
-    init(category: String, description: String, road: String, region: String) {
+    init(category: String, description: String, road: String, region: String, latitude: String, longitude: String) {
         self.category = category
         self.description = description
         self.road = road
         self.region = region
+        self.latitude = (latitude as NSString).doubleValue
+        self.longitude = (longitude as NSString).doubleValue
     }
 }
