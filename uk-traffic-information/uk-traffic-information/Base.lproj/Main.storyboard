@@ -107,8 +107,24 @@
                     <view key="view" contentMode="scaleToFill" id="FHR-eE-Eag">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="9Ey-kn-Nwk">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="600" id="VR5-py-n0o"/>
+                                </constraints>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9Ey-kn-Nwk" firstAttribute="centerY" secondItem="FHR-eE-Eag" secondAttribute="centerY" constant="32" id="8tV-0q-d4I"/>
+                            <constraint firstItem="9Ey-kn-Nwk" firstAttribute="centerX" secondItem="FHR-eE-Eag" secondAttribute="centerX" id="V8z-oj-kQt"/>
+                            <constraint firstItem="9Ey-kn-Nwk" firstAttribute="top" secondItem="v33-se-eWm" secondAttribute="bottom" id="VRC-MB-h5d"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="9Ey-kn-Nwk" id="7NK-Tm-UcO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p95-32-suM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
