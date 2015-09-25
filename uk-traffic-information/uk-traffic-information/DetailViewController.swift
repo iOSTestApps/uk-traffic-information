@@ -15,6 +15,7 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        mapView.mapType = MKMapType.Hybrid
     }
 
 }
