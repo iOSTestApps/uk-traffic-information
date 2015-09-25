@@ -56,7 +56,7 @@ class MainTableViewController: UITableViewController, ENSideMenuDelegate {
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        print(tableData[indexPath.row].latitude)
+        self.performSegueWithIdentifier("openDetail", sender: self)
     }
 
     /*

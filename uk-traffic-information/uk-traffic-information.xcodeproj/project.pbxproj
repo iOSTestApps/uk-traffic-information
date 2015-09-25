@@ -18,6 +18,7 @@
 		AC07441C1BA88A320039CC9A /* ENSideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC07441A1BA88A320039CC9A /* ENSideMenuNavigationController.swift */; };
 		AC0744201BA88BB70039CC9A /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC07441F1BA88BB70039CC9A /* MainNavigationController.swift */; };
 		AC0744221BA892250039CC9A /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0744211BA892250039CC9A /* MenuTableViewController.swift */; };
+		AC3892071BB60CB300D95EBF /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3892061BB60CB300D95EBF /* DetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		ACD3C6AE1BA8B57600BA1A7B /* NSDate+dateFromInternetDateTimeString.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD3C6A91BA8B57600BA1A7B /* NSDate+dateFromInternetDateTimeString.swift */; };
 		ACD3C6AF1BA8B57600BA1A7B /* RSSFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD3C6AA1BA8B57600BA1A7B /* RSSFeed.swift */; };
 		ACD3C6B01BA8B57600BA1A7B /* RSSItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD3C6AB1BA8B57600BA1A7B /* RSSItem.swift */; };
@@ -67,6 +68,7 @@
 		AC07441A1BA88A320039CC9A /* ENSideMenuNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ENSideMenuNavigationController.swift; path = ../../../ENSwiftSideMenu/Library/ENSideMenuNavigationController.swift; sourceTree = "<group>"; };
 		AC07441F1BA88BB70039CC9A /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		AC0744211BA892250039CC9A /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		AC3892061BB60CB300D95EBF /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		ACD3C6A91BA8B57600BA1A7B /* NSDate+dateFromInternetDateTimeString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+dateFromInternetDateTimeString.swift"; sourceTree = "<group>"; };
 		ACD3C6AA1BA8B57600BA1A7B /* RSSFeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSFeed.swift; sourceTree = "<group>"; };
 		ACD3C6AB1BA8B57600BA1A7B /* RSSItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSItem.swift; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 		AC07441E1BA88A400039CC9A /* view-controllers */ = {
 			isa = PBXGroup;
 			children = (
+				AC3892061BB60CB300D95EBF /* DetailViewController.swift */,
 				AC07441F1BA88BB70039CC9A /* MainNavigationController.swift */,
 				AC0744211BA892250039CC9A /* MenuTableViewController.swift */,
 				ACD857BB1BA8A4B600861BE1 /* MainTableViewController.swift */,
@@ -379,6 +382,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC0744201BA88BB70039CC9A /* MainNavigationController.swift in Sources */,
+				AC3892071BB60CB300D95EBF /* DetailViewController.swift in Sources */,
 				ACD857C41BA8A94800861BE1 /* Event.swift in Sources */,
 				ACD3C6B61BA8BB5F00BA1A7B /* UKTITableViewCell.swift in Sources */,
 				ACD3C6AF1BA8B57600BA1A7B /* RSSFeed.swift in Sources */,
