@@ -22,7 +22,7 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
         let point = MKPointAnnotation()
         point.coordinate = selectedEvent.location.coordinate
         point.title = selectedEvent.road
-        point.subtitle = selectedEvent.description
+        point.subtitle = selectedEvent.category
         mapView.addAnnotation(point)
         mapView.setRegion(region, animated: true)
         mapView.mapType = MKMapType.Hybrid
