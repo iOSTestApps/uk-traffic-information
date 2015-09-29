@@ -19,6 +19,7 @@
 		AC0744201BA88BB70039CC9A /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC07441F1BA88BB70039CC9A /* MainNavigationController.swift */; };
 		AC0744221BA892250039CC9A /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0744211BA892250039CC9A /* MenuTableViewController.swift */; };
 		AC3892071BB60CB300D95EBF /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3892061BB60CB300D95EBF /* DetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		AC4C9CF21BBA9872005555E4 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4C9CF11BBA9872005555E4 /* MapViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		ACD3C6AE1BA8B57600BA1A7B /* NSDate+dateFromInternetDateTimeString.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD3C6A91BA8B57600BA1A7B /* NSDate+dateFromInternetDateTimeString.swift */; };
 		ACD3C6AF1BA8B57600BA1A7B /* RSSFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD3C6AA1BA8B57600BA1A7B /* RSSFeed.swift */; };
 		ACD3C6B01BA8B57600BA1A7B /* RSSItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD3C6AB1BA8B57600BA1A7B /* RSSItem.swift */; };
@@ -69,6 +70,7 @@
 		AC07441F1BA88BB70039CC9A /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		AC0744211BA892250039CC9A /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		AC3892061BB60CB300D95EBF /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		AC4C9CF11BBA9872005555E4 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		ACD3C6A91BA8B57600BA1A7B /* NSDate+dateFromInternetDateTimeString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+dateFromInternetDateTimeString.swift"; sourceTree = "<group>"; };
 		ACD3C6AA1BA8B57600BA1A7B /* RSSFeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSFeed.swift; sourceTree = "<group>"; };
 		ACD3C6AB1BA8B57600BA1A7B /* RSSItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSItem.swift; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 				AC07441F1BA88BB70039CC9A /* MainNavigationController.swift */,
 				AC0744211BA892250039CC9A /* MenuTableViewController.swift */,
 				ACD857BB1BA8A4B600861BE1 /* MainTableViewController.swift */,
+				AC4C9CF11BBA9872005555E4 /* MapViewController.swift */,
 			);
 			name = "view-controllers";
 			sourceTree = "<group>";
@@ -394,6 +397,7 @@
 				AC0743F01BA8869F0039CC9A /* uk_traffic_information.xcdatamodeld in Sources */,
 				ACD857BA1BA8987A00861BE1 /* MenuItem.swift in Sources */,
 				AC07441C1BA88A320039CC9A /* ENSideMenuNavigationController.swift in Sources */,
+				AC4C9CF21BBA9872005555E4 /* MapViewController.swift in Sources */,
 				ACD3C6B21BA8B57600BA1A7B /* String+imageLinksFromHTML.swift in Sources */,
 				AC0743E81BA8869F0039CC9A /* AppDelegate.swift in Sources */,
 				ACD3C6B41BA8B5C200BA1A7B /* Rss.swift in Sources */,
