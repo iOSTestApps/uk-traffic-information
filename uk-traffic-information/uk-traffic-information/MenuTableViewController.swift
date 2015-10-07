@@ -60,7 +60,7 @@ class MenuTableViewController: UITableViewController {
             cell!.selectedBackgroundView = selectedBackgroundView
         }
         
-        cell!.textLabel?.text = menuItems[indexPath.row].title
+        cell!.textLabel?.text = menuItems[indexPath.row].getTitle()
         
         return cell!
     }
@@ -75,7 +75,7 @@ class MenuTableViewController: UITableViewController {
         
         selectedMenuIndex = indexPath.row
         
-        sideMenuController()?.setContentViewController(menuItems[indexPath.row].viewController)
+        sideMenuController()?.setContentViewController(menuItems[indexPath.row].getViewController())
     }
     
     
