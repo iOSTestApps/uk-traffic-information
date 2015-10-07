@@ -18,11 +18,12 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         mapView.delegate = self
-        let region = MKCoordinateRegionMakeWithDistance(selectedEvent.location.coordinate, 1000 * 2.0, 1000 * 2.0)
+        let location = selectedEvent.getLocation()
+        let region = MKCoordinateRegionMakeWithDistance(location.coordinate, 1000 * 2.0, 1000 * 2.0)
         let point = MKPointAnnotation()
-        point.coordinate = selectedEvent.location.coordinate
-        point.title = selectedEvent.road
-        point.subtitle = selectedEvent.category
+        point.coordinate = location.coordinate
+        point.title = selectedEvent.getRoad()
+        point.subtitle = selectedEvent.getCategory()
         mapView.addAnnotation(point)
         mapView.setRegion(region, animated: true)
         mapView.mapType = MKMapType.Hybrid

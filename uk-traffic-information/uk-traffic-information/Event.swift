@@ -10,13 +10,14 @@ import Foundation
 import CoreLocation
 
 public class Event {
-    var category: String!
-    var description: String!
-    var road: String!
-    var region: String!
-    var latitude: CLLocationDegrees!
-    var longitude: CLLocationDegrees!
-    var location: CLLocation!
+    
+    private var category: String!
+    private var description: String!
+    private var road: String!
+    private var region: String!
+    private var latitude: CLLocationDegrees!
+    private var longitude: CLLocationDegrees!
+    private var location: CLLocation!
     
     init(category: String, description: String, road: String, region: String, latitude: String, longitude: String) {
         self.category = category
@@ -27,4 +28,33 @@ public class Event {
         self.longitude = (longitude as NSString).doubleValue
         self.location = CLLocation(latitude: self.latitude, longitude: self.longitude)
     }
+    
+    public func getCategory() -> String {
+        return self.category
+    }
+    
+    public func getDescription() -> String {
+        return self.description
+    }
+    
+    public func getRoad() -> String {
+        return self.road
+    }
+    
+    public func getRegion() -> String {
+        return self.region
+    }
+    
+    public func getLatitude() -> CLLocationDegrees {
+        return self.latitude
+    }
+    
+    public func getLongitude() -> CLLocationDegrees {
+        return self.longitude
+    }
+    
+    public func getLocation() -> CLLocation {
+        return self.location
+    }
+    
 }

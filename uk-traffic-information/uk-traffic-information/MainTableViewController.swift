@@ -51,10 +51,10 @@ class MainTableViewController: UITableViewController, ENSideMenuDelegate {
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UKTITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("entry", forIndexPath: indexPath) as! UKTITableViewCell
-        cell.topLeftLabel?.text = tableData[indexPath.row].description
+        cell.topLeftLabel?.text = tableData[indexPath.row].getDescription()
         cell.topLeftLabel?.numberOfLines = 0
-        cell.bottomLeftLabel?.text = tableData[indexPath.row].category
-        cell.bottomRightLabel?.text = "\(tableData[indexPath.row].region) - \(tableData[indexPath.row].road)"
+        cell.bottomLeftLabel?.text = tableData[indexPath.row].getCategory()
+        cell.bottomRightLabel?.text = "\(tableData[indexPath.row].getRegion()) - \(tableData[indexPath.row].getRoad())"
         return cell
     }
     
