@@ -20,8 +20,7 @@ class MenuTableViewController: UITableViewController {
         
         let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         menuItems = [
-            MenuItem(title: "All Incidents", viewController: mainStoryboard.instantiateViewControllerWithIdentifier("MainTableViewController")),
-            MenuItem(title: "Map", viewController: mainStoryboard.instantiateViewControllerWithIdentifier("MapViewController"))
+            MenuItem(title: "All Incidents", viewController: mainStoryboard.instantiateViewControllerWithIdentifier("MainTableViewController"))
         ]
         
         tableView.contentInset = UIEdgeInsetsMake(64.0, 0, 0, 0)
